@@ -1,8 +1,11 @@
-function takeANumber(currentLine, newName) {
 
-  currentLine.push(newName)
+var number = 0
+
+function takeANumber(currentLine) {
+number++
+  currentLine.push(number)
   
-  return `Welcome, ${newName}. You are number ${currentLine.length} in line.` 
+  return `You are number ${number} in line.` 
   
 }
 
